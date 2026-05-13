@@ -81,7 +81,7 @@ const Home = () => {
                    {/* 
 <MenuItem
     icon={AlertCircle}
-    label="건의사항"
+    label="공지사항"
     to="/suggestions"
     color="bg-pink-500"
 />
