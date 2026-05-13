@@ -138,7 +138,7 @@ const Suggestions = () => {
 
     // Handle Admin Reset
     const handleReset = async () => {
-        if (!window.confirm('정말로 모든 건의사항을 삭제하시겠습니까?\n이 작업은 되돌릴 수 없습니다.')) return;
+        if (!window.confirm('정말로 모든 공사항을 삭제하시겠습니까?\n이 작업은 되돌릴 수 없습니다.')) return;
 
         try {
             const { error } = await supabase
@@ -148,7 +148,7 @@ const Suggestions = () => {
 
             if (error) throw error;
 
-            alert('모든 건의사항이 삭제되었습니다.');
+            alert('모든 공사항이 삭제되었습니다.');
             fetchSuggestions();
         } catch (error) {
             console.error("Error resetting suggestions:", error);
@@ -273,7 +273,7 @@ const Suggestions = () => {
                             >
                                 <div className="flex justify-between items-start mb-1">
                                     <h3 className="font-bold text-gray-800 line-clamp-1 flex-1">
-                                        {post.is_secret && !isAdmin ? "🔒 비공개 건의사항입니다." : post.title}
+                                        {post.is_secret && !isAdmin ? "🔒 관리자 전용 공지입니다." : post.title}
                                     </h3>
                                     {post.is_secret && <Lock size={16} className="text-gray-400 ml-2 flex-shrink-0" />}
                                 </div>
