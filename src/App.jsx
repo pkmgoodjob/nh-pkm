@@ -24,7 +24,7 @@ function App() {
           <Route path="life" element={<LifeGuide />} />
           <Route path="rules" element={<Rules />} />
           <Route path="bedding" element={<Bedding />} />
-{/* <Route path="suggestions" element={<Suggestions />} /> */}
+          {/* */}
         </Route>
       </Routes>
     </SettingsProvider>
