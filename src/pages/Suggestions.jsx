@@ -220,16 +220,16 @@ const Suggestions = () => {
                             <ChevronLeft size={24} />
                         </button>
                     )}
-                    <h2 className="text-xl font-bold text-gray-800">건의사항 게시판</h2>
+                    <h2 className="text-xl font-bold text-gray-800">공지사항</h2>
                 </div>
                 <div className="flex items-center gap-2">
-                    {view === 'list' && (
+                    {view === 'list' && isAdmin && (
                         <button
                             onClick={() => setView('write')}
                             className="bg-nh-blue text-white px-3 py-2 rounded-lg text-sm font-bold flex items-center gap-1 shadow-sm hover:bg-blue-700"
                         >
                             <PenTool size={16} />
-                            글쓰기
+                            공지 작성
                         </button>
                     )}
                     <button
@@ -262,7 +262,7 @@ const Suggestions = () => {
                         <p className="text-center text-gray-500 py-8">로딩 중...</p>
                     ) : suggestions.length === 0 ? (
                         <div className="text-center py-12 bg-gray-50 rounded-xl border border-dashed border-gray-200">
-                            <p className="text-gray-400">등록된 건의사항이 없습니다.</p>
+                            <p className="text-gray-400">등록된 공지사항이 없습니다.</p>
                         </div>
                     ) : (
                         suggestions.map((post) => (
