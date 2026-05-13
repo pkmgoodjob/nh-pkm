@@ -78,13 +78,12 @@ const Home = () => {
                         to="/bedding"
                         color="bg-indigo-500"
                     />
-                   {/* 
-<MenuItem
-    icon={AlertCircle}
-    label="공지사항"
-    to="/suggestions"
-    color="bg-pink-500"
-/>
+                   <MenuItem
+                        icon={AlertCircle}
+                        label="공지사항"
+                        to="/suggestions"
+                        color="bg-pink-500"
+                    />
 */}
                 </div>
             </div>
