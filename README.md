@@ -6,7 +6,8 @@
 
 아래 버튼을 누르면 담당자님의 Vercel 계정으로 이 코드가 복제되며 즉시 배포가 시작됩니다.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fkrom4146%2Fnh-gurye-edu-distribution&env=VITE_SUPABASE_URL,VITE_SUPABASE_ANON_KEY,VITE_ADMIN_PASSWORD)
+[![Deploy with Vercel](https://vercel.com/button)](
+https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fpkmgoodjob%2Fnh-pkm&env=VITE_SUPABASE_URL,VITE_SUPABASE_ANON_KEY,VITE_ADMIN_PASSWORD)
 
 ---
 
